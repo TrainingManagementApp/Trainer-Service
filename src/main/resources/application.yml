@@ -1,0 +1,23 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: https://eureka-server-q5hz.onrender.com/eureka/
+  instance:
+    prefer-ip-address: true
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://dpg-d37q6qur433s73ev914g-a.oregon-postgres.render.com:5432/skillbuilders
+    username: skillbuilders_user
+    password: 7IsL5XlgtSUYpz1U7u3ADPU5HzW57YXl
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
